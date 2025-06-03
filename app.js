@@ -1,10 +1,11 @@
-fetch("/Ankatropik/headerfooter/header.html")
+// Assuming app.js and headerfooter folder are in the root repo folder "Ankatropik"
+fetch("headerfooter/header.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("header").innerHTML = data;
   });
 
-fetch("/Ankatropik/headerfooter/footer.html")
+fetch("headerfooter/footer.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("footer").innerHTML = data;
