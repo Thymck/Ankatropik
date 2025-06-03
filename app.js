@@ -1,11 +1,9 @@
-fetch("/Ankatropik/headerfooter/header.html")
-  .then((res) => res.text())
-  .then((data) => {
-    document.getElementById("header").innerHTML = data;
-  });
+const basePath = window.location.pathname.includes("/contact/") ? "../" : "./";
 
-fetch("/Ankatropik/headerfooter/footer.html")
+fetch(basePath + "headerfooter/header.html")
   .then((res) => res.text())
-  .then((data) => {
-    document.getElementById("footer").innerHTML = data;
-  });
+  .then((data) => (document.getElementById("header").innerHTML = data));
+
+fetch(basePath + "headerfooter/footer.html")
+  .then((res) => res.text())
+  .then((data) => (document.getElementById("footer").innerHTML = data));
