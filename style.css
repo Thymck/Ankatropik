@@ -356,14 +356,6 @@ iframe {
     font-size: 14px;
     margin: 8px 0;
   }
-  .logo img {
-    width: 50px;
-    border-radius: 20px;
-    height: auto;
-    margin: 0 auto; /* this helps center in block layouts */
-    padding: 0;
-    display: block;
-  }
 
   /* Hero text */
   #hero {
