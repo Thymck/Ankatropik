@@ -60,6 +60,7 @@ body {
   height: 20vh; /* Tam ekran yüksekliği */
   font-family: "Inter", sans-serif;
   color: #1a1d10;
+  overflow: scroll;
 }
 
 #h6 {
@@ -174,6 +175,7 @@ body {
   color: #5d8d60; /* Adjust depending on contrast with background */
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container2 h2 {
@@ -418,7 +420,7 @@ iframe {
     padding: 20px;
     width: 100%;
     max-width: 100%;
-    box-sizing: border-box;
+    overflow: hidden;
   }
 
   .aboutus-image img {
